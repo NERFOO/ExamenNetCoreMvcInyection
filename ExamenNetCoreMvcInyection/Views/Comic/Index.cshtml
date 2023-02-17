@@ -1,0 +1,17 @@
+﻿@model List<Comic>
+
+    <h1>Comics SQL y ORACLE</h1>
+
+<div class="row justify-content-center">
+    <a class="btn btn-success" asp-controller="Comic" asp-action="Create">Crear nuevo Comic</a>
+</div>
+
+<div class="card" style="width: 18rem;">
+    @foreach(Comic com in Model) {
+      <img src="@com.Imagen" class="card-img-top" >
+      <div class="card-body">
+        <h5 class="card-title">@com.Nombre</h5>
+        <p class="card-text">@com.Descripcion</p>
+      </div>
+    }
+</div>

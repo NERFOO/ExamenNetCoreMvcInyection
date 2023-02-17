@@ -1,0 +1,21 @@
+﻿@model Comic
+
+<h1>Creacion de un nuevo Comic</h1>
+
+<form method="post">
+
+    <label>Nombre</label>
+    <input type="text" name="nombre" class="form-control" />
+
+    <label>Imagen</label>
+    <input type="text" name="imagen" class="form-control" />
+
+    <label>Descripcion</label>
+    <input type="text" name="descripcion" class="form-control" />
+
+    <button type="submit" class="btn btn-success">Crear comic</button>
+</form>
+
+<br />
+
+<a asp-controller="Comic" asp-action="Index" class="btn btn-danger">Come back</a>
